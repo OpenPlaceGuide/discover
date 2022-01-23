@@ -40,7 +40,7 @@ the country in here.
 1. Supply your `.poly` file, for example from download.openstreetmap.fr or GeoFabrik
 
 2. Convert the `.poly` file to a geojson file
-   ```
+   ```bash
    git clone https://github.com/spatialoperator/osmosis2geojson.git
    cd osmosis2geojson
    npm install osmosis2geojson
