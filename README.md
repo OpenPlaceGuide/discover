@@ -11,7 +11,7 @@ The discover process is a two step process.
 
 You need the location (latitude, longitude) and optional the osmType (point, way, relation) and osmId (positive integer).
 
-Example:
+Example (*Remark*: API not yet hosted online):
 
 `GET https://discover.openplaceguide.org/v1/discover?lat=12.78&lng=36.92&osmType=point&osmId=123456`
 
