@@ -1,13 +1,15 @@
 name: CI
-
-on: [push]
-
+on: [ push ]
 jobs:
   build-test:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
+      - name: Schema Validation of Areas
+        uses: borales/actions-yarn@v2.3.0
+        with:
+          cmd: validate-areas
       - name: PHP Composer
         uses: php-actions/composer@v5
         with:
