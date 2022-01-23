@@ -1,13 +1,13 @@
 # OpenPlaceGuide - Discover API
 
-OpenPlaceGuide is federated business directory.
+OpenPlaceGuide is a federated business directory.
 
 The discover component is a [Laravel Lumen 8](https://lumen.laravel.com/docs/8.x/) project which provides an API to
 match given coordinates to the OpenPlaceGuide instance.
 
 ## How it works
 
-The discover process is a two step process.
+Discovery is a two step process.
 
 You need the location (latitude, longitude) and optional the osmType (point, way, relation) and osmId (positive integer).
 
@@ -44,7 +44,7 @@ the country in here.
    git clone https://github.com/spatialoperator/osmosis2geojson.git
    cd osmosis2geojson
    npm install osmosis2geojson
-   ./osmosis2geojson.js your-country.poly  > ../discover/storage/app/areas/your-country.geojson
+   ./osmosis2geojson.js your-country.poly > ../discover/storage/app/areas/your-country.geojson
    ```
 
 3. Add the `.yaml` config file in storage/app/areas/your-country.yaml
