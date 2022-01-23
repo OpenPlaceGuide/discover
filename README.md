@@ -43,7 +43,7 @@ the country in here.
    ```bash
    git clone https://github.com/spatialoperator/osmosis2geojson.git
    cd osmosis2geojson
-   npm install osmosis2geojson
+   yarn
    ./osmosis2geojson.js your-country.poly > ../discover/storage/app/areas/your-country.geojson
    ```
 
