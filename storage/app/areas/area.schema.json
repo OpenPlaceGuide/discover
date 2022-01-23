@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://openplaceguide.org/area.schema.json",
+    "title": "Area",
+    "description": "Area for OpenPlaceGuide",
+    "type": "object",
+    "properties": {
+        "url": {
+            "description": "place base URL",
+            "type": "string"
+        },
+        "manager": {
+            "description": "instance manager(s), preferable OpenStreetMap user links",
+            "type": ["string","array"],
+            "items": {
+                "type": "string"
+            }
+        },
+        "git": {
+            "description": "git link for the data / for contributions",
+            "type": "string"
+        }
+    },
+    "required": [
+        "url",
+        "manager",
+        "git"
+    ]
+}
